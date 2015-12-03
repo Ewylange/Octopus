@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour {
 		_timer += Time.deltaTime;
 		timerText.GetComponent<Text>().text = "Timer: " + _timer;
 
-		if(_timer >= 30){
+		if(_timer >= 60){
 			Debug.Log ("GameOver");
 			_timer = 0;
 			Application.LoadLevel(1);
